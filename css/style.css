@@ -127,3 +127,49 @@ h1 {
     cursor: pointer;
 
 }
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.08);
+
+}
+
+.logo a {
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+.nav-links a {
+
+    color: var(--text);
+
+    text-decoration: none;
+
+}
