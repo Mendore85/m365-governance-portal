@@ -182,6 +182,16 @@ button {
 
 }
 
+.navbar button {
+
+    width: auto;
+
+    padding: 10px 16px;
+
+    margin-top: 0;
+
+}
+
 .logo a {
 
     color: white;
