@@ -28,21 +28,31 @@ body {
 
     min-height: 100vh;
 
-    padding: 20px;
-
     background: var(--bg);
+
+    font-family: Segoe UI, sans-serif;
 
     color: var(--text);
 
-    font-family: "Segoe UI", sans-serif;
+    padding: 40px;
 
 }
 
 .container {
 
-    max-width: 1200px;
+    width: 500px;
 
     margin: auto;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: var(--card);
+
+    backdrop-filter: blur(15px);
+
+    color: var(--text);
 
 }
 

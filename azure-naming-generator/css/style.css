@@ -26,18 +26,21 @@ body {
 
     min-height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     background: var(--bg);
 
     font-family: Segoe UI, sans-serif;
+
+    color: var(--text);
+
+    padding: 40px;
+
 }
 
 .container {
 
     width: 500px;
+
+    margin: auto;
 
     padding: 30px;
 
@@ -48,6 +51,7 @@ body {
     backdrop-filter: blur(15px);
 
     color: var(--text);
+
 }
 
 h1 {
