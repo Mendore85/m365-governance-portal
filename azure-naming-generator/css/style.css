@@ -38,7 +38,7 @@ body {
 
 .container {
 
-    width: 500px;
+    max-width: 500px;
 
     margin: auto;
 
@@ -170,7 +170,9 @@ button {
 
     align-items: center;
 
-    margin-bottom: 30px;
+    max-width: 1200px;
+
+    margin: 0 auto 30px auto;
 
     padding: 20px;
 
