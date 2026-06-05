@@ -1,0 +1,129 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+
+    --bg: #0f172a;
+    --card: rgba(255,255,255,0.08);
+    --text: white;
+    --button: #2563eb;
+
+}
+
+body.light {
+
+    --bg: #f5f5f5;
+    --card: white;
+    --text: #222;
+    --button: #2563eb;
+
+}
+
+body {
+
+    min-height: 100vh;
+
+    padding: 30px;
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    font-family: "Segoe UI", sans-serif;
+
+}
+
+.container {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+}
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+.subtitle {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    opacity: 0.8;
+
+}
+
+.dashboard {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,
+        minmax(280px, 1fr));
+
+    gap: 20px;
+
+}
+
+.card {
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    background: var(--card);
+
+    text-decoration: none;
+
+    color: var(--text);
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.card h2 {
+
+    margin-bottom: 12px;
+
+}
+
+.toolbar {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-bottom: 20px;
+
+}
+
+#themeToggle {
+
+    width: 60px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}

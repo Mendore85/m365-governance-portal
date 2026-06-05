@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        PowerShell Script Generator
+    </title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="toolbar">
+
+            <button id="themeToggle">
+                🌙
+            </button>
+
+        </div>
+
+        <a class="back-button"
+        href="../index.html">
+
+       ← Back to Portal
+
+       </a>
+
+        <h1>
+            PowerShell Script Generator
+        </h1>
+
+        <div class="form-group">
+
+            <label>
+                Service
+            </label>
+
+            <select id="service">
+
+                <option value="Exchange">
+                    Exchange Online
+                </option>
+
+                <option value="SharePoint">
+                    SharePoint Online
+                </option>
+
+                <option value="Graph">
+                    Microsoft Graph
+                </option>
+
+                <option value="Azure">
+                    Azure
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+                Task
+            </label>
+
+            <select id="task">
+
+                <option value="Mailbox">
+                    Get Mailboxes
+                </option>
+
+                <option value="Users">
+                    List Users
+                </option>
+
+                <option value="Connect">
+                    Connect Service
+                </option>
+
+                <option value="Groups">
+                    List Groups
+                </option>
+
+            </select>
+
+        </div>
+
+        <button onclick="generateScript()">
+            Generate Script
+        </button>
+
+        <div id="results"></div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

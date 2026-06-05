@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Tagging Validator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+    <div class="toolbar">
+
+        <button id="themeToggle">
+            🌙
+        </button>
+
+    </div>
+
+    <a class="back-button"
+     href="../index.html">
+
+     ← Back to Portal
+
+      </a>
+
+    <h1>Azure Tagging Validator</h1>
+
+        <textarea
+            id="tagsInput"
+            placeholder='{
+  "Environment": "Prod",
+  "Owner": "Finance"
+}'></textarea>
+
+        <button onclick="validateTags()">
+            Validate Tags
+        </button>
+
+        <div id="scoreContainer">
+
+        <div id="scoreText">
+        Compliance Score: 0%
+        </div>
+
+        <div id="progressBar">
+
+        <div id="progressFill"></div>
+
+    </div>
+
+</div>
+
+        <div id="results"></div>
+
+        <div class="history">
+
+    <h2>Validation History</h2>
+
+    <ul id="historyList"></ul>
+
+    <button onclick="clearHistory()">
+        Clear History
+    </button>
+
+    <button onclick="exportCSV()">
+    Export CSV
+    </button>
+
+</div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        M365 License Analyzer
+    </title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="toolbar">
+
+            <button id="themeToggle">
+                🌙
+            </button>
+
+        </div>
+
+
+        <a class="back-button"
+        href="../index.html">
+
+        ← Back to Portal
+
+         </a>
+
+        <h1>
+            M365 License Analyzer
+        </h1>
+
+        <textarea
+            id="licenseInput"
+            placeholder='Paste Microsoft Graph License JSON Here'>
+        </textarea>
+
+        <button onclick="analyzeLicenses()">
+            Analyze Licenses
+        </button>
+
+        <div id="dashboard">
+
+            <div class="summary-card">
+
+                <h3>Total Licenses</h3>
+
+                <p id="totalLicenses">
+                    0
+                </p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <h3>Average Usage</h3>
+
+                <p id="averageUsage">
+                    0%
+                </p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <h3>Critical Licenses</h3>
+
+                <p id="criticalCount">
+                    0
+                </p>
+
+            </div>
+
+        </div>
+
+        <div id="results"></div>
+
+        <div class="history">
+
+        <h2>Analysis History</h2>
+
+        <ul id="historyList"></ul>
+
+        <button onclick="clearHistory()">
+        Clear History
+       </button>
+
+       <button onclick="exportCSV()">
+    Export Report
+       </button>
+
+</div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
