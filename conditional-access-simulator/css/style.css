@@ -1,11 +1,3 @@
-* {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
 :root {
 
     --bg: #0f172a;
@@ -24,6 +16,12 @@ body.light {
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
 
     min-height: 100vh;
@@ -40,7 +38,7 @@ body {
 
 .container {
 
-    width: 500px;
+    max-width: 500px;
 
     margin: auto;
 
@@ -61,23 +59,21 @@ h1 {
     text-align: center;
 
     margin-bottom: 25px;
-
 }
 
 .form-group {
 
-    margin-bottom: 20px;
-
+    margin-bottom: 15px;
 }
 
 label {
 
     display: block;
 
-    margin-bottom: 8px;
-
+    margin-bottom: 5px;
 }
 
+input,
 select {
 
     width: 100%;
@@ -87,57 +83,64 @@ select {
     border: none;
 
     border-radius: 10px;
-
 }
 
 button {
 
     width: 100%;
 
-    padding: 14px;
+    padding: 12px;
 
     border: none;
 
-    border-radius: 12px;
+    border-radius: 10px;
 
     cursor: pointer;
+
+    margin-top: 10px;
 
     background: var(--button);
 
     color: white;
 
-    font-size: 1rem;
-
     font-weight: bold;
-
-    margin-top: 10px;
-
 }
 
-.card {
+.output {
+
+    margin-top: 20px;
+}
+
+#result {
+
+    background: white;
+
+    font-weight: bold;
+}
+
+.history {
 
     margin-top: 25px;
 
-    padding: 20px;
+}
 
-    border-radius: 12px;
+.history ul {
 
-    background:
-        rgba(255,255,255,0.08);
+    list-style: none;
+
+    padding: 0;
 
 }
 
-.toolbar {
+.history li {
 
-    display: flex;
+    padding: 10px;
 
-    justify-content: flex-end;
+    margin-top: 8px;
 
-}
+    border-radius: 8px;
 
-#themeToggle {
-
-    width: 60px;
+    background: rgba(255,255,255,0.1);
 
 }
 
@@ -158,6 +161,7 @@ button {
     border-radius: 10px;
 
 }
+
 .navbar {
 
     display: flex;
@@ -166,13 +170,25 @@ button {
 
     align-items: center;
 
-    margin-bottom: 30px;
+    max-width: 1200px;
+
+    margin: 0 auto 30px auto;
 
     padding: 20px;
 
     border-radius: 16px;
 
     background: rgba(255,255,255,0.08);
+
+}
+
+.navbar button {
+
+    width: auto;
+
+    padding: 10px 16px;
+
+    margin-top: 0;
 
 }
 
