@@ -1,49 +1,51 @@
-fetch("../components/navbar.html")
+document.addEventListener("DOMContentLoaded", () => {
 
-.then(response => response.text())
+    // Load navbar
+    const navbar = document.getElementById("navbar");
 
-.then(data => {
+    if (navbar) {
 
-    document.getElementById(
-        "navbar"
-    ).innerHTML = data;
+        fetch("../components/navbar.html")
+        .then(response => response.text())
+        .then(data => {
+
+            navbar.innerHTML = data;
+
+            initializeTheme();
+
+        });
+
+    } else {
+
+        initializeTheme();
+
+    }
 
 });
 
-const themeToggle =
-    document.getElementById(
-        "themeToggle"
-    );
+function initializeTheme() {
 
-if (
-    localStorage.getItem(
-        "theme"
-    ) === "light"
-) {
+    const themeButtons =
+        document.querySelectorAll("#themeToggle");
 
-    document.body.classList.add(
-        "light"
-    );
+    // Load saved theme
+    const savedTheme =
+        localStorage.getItem("theme");
 
-}
+    if (savedTheme === "light") {
 
-document.addEventListener(
-    "click",
-    event => {
+        document.body.classList.add("light");
 
-        if (
-            event.target.id ===
-            "themeToggle"
-        ) {
+    }
 
-            document.body.classList.toggle(
-                "light"
-            );
+    themeButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            document.body.classList.toggle("light");
 
             if (
-                document.body.classList.contains(
-                    "light"
-                )
+                document.body.classList.contains("light")
             ) {
 
                 localStorage.setItem(
@@ -60,7 +62,8 @@ document.addEventListener(
 
             }
 
-        }
+        });
 
-    }
-);
+    });
+
+}

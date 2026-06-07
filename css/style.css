@@ -173,3 +173,29 @@ h1 {
     text-decoration: none;
 
 }
+
+textarea {
+
+    width: 100%;
+
+    min-height: 140px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    resize: vertical;
+
+    margin-bottom: 15px;
+
+    font-family: Consolas, monospace;
+
+    font-size: 14px;
+
+    background: white;
+
+    color: #111;
+
+}
