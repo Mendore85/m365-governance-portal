@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azure Tagging Validator</title>
 
-    <link rel="stylesheet" href="../assets/global.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Azure Tagging Validator
+    </title>
+
+    <link rel="stylesheet"
+          href="../assets/global.css">
+
 </head>
+
 <body>
 
     <div id="navbar"></div>
 
     <div class="container">
 
-
-    <h1>Azure Tagging Validator</h1>
+        <h1>
+            Azure Tagging Validator
+        </h1>
 
         <textarea
             id="tagsInput"
@@ -24,60 +35,57 @@
 }'></textarea>
 
         <button onclick="validateTags()">
+
             Validate Tags
+
         </button>
 
         <div id="scoreContainer">
 
-        <div id="scoreText">
-        Compliance Score: 0%
+            <div id="scoreText">
+
+                Compliance Score: 0%
+
+            </div>
+
+            <div id="progressBar">
+
+                <div id="progressFill"></div>
+
+            </div>
+
         </div>
-
-        <div id="progressBar">
-
-        <div id="progressFill"></div>
-
-    </div>
-
-</div>
 
         <div id="results"></div>
 
         <div class="history">
 
-    <h2>Validation History</h2>
+            <h2>
+                Validation History
+            </h2>
 
-    <ul id="historyList"></ul>
+            <ul id="historyList"></ul>
 
-    <button onclick="clearHistory()">
-        Clear History
-    </button>
+            <button onclick="clearHistory()">
 
-    <button onclick="exportCSV()">
-    Export CSV
-    </button>
+                Clear History
+
+            </button>
+
+            <button onclick="exportCSV()">
+
+                Export CSV
+
+            </button>
+
+        </div>
 
     </div>
 
     <script src="js/app.js"></script>
 
-    <script>
-
-    fetch("../components/navbar.html")
-
-    .then(response => response.text())
-
-    .then(data => {
-
-        document.getElementById(
-            "navbar"
-        ).innerHTML = data;
-
-    });
-
-    </script>
+    <script src="../assets/shared.js"></script>
 
 </body>
-</html>
 
-<script src="../assets/shared.js"></script>
+</html>
