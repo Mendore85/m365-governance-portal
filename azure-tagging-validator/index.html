@@ -57,28 +57,27 @@
     Export CSV
     </button>
 
-</div>
-
     </div>
 
     <script src="js/app.js"></script>
-    
-<script>
 
-fetch("../components/navbar.html")
+    <script>
 
-.then(response => response.text())
+    fetch("../components/navbar.html")
 
-.then(data => {
+    .then(response => response.text())
 
-    document.getElementById(
-        "navbar"
-    ).innerHTML = data;
+    .then(data => {
 
-});
+        document.getElementById(
+            "navbar"
+        ).innerHTML = data;
 
-</script>
+    });
+
+    </script>
 
 </body>
 </html>
 
+<script src="../assets/shared.js"></script>
