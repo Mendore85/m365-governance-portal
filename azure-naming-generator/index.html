@@ -15,6 +15,10 @@
 
         <h1>Azure Naming Generator</h1>
 
+        <button id="themeToggle">
+        🌙 Toggle Theme
+        </button>
+
         <div class="form-group">
             <label>Application Name</label>
             <input
@@ -99,19 +103,8 @@
 
     <script>
 
-fetch("../components/navbar.html")
-
-.then(response => response.text())
-
-.then(data => {
-
-    document.getElementById(
-        "navbar"
-    ).innerHTML = data;
-
-});
-
 </script>
+<script src="../assets/shared.js"></script>
 
 </body>
 </html>
